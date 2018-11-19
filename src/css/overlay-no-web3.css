@@ -1,0 +1,29 @@
+#overlay {
+  display:none;
+  height:100%;
+  width:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:100;
+  background-color:rgba(232, 236, 238, 0.95);
+  overflow-x:hidden;
+ }
+
+#overlay .content {
+  position:relative;
+  top:25%;
+  width:100%;
+  margin-top:30px;
+  color:#888888;
+  text-align:center;
+}
+
+#overlay .no-web3-browser {
+  display:none;
+}
+
+#overlay .web3-not-unlocked {
+  display:none;
+  color:#F79220;
+}

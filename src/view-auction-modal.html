@@ -1,0 +1,97 @@
+<div id="viewAuctionModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title text-center">Buy Number</h4>
+      </div>
+
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <div class="row">
+              <div class="col-xs-12 col-sm-3">
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <div class="number-template">
+                  <div class="panel panel-default panel-number">
+                    <div class="panel-body">
+                      <div>
+                        <div class="number"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-3">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="stats" style="margin-top:52px;">
+                  <h5 class="text-center" style="color:#cccccc;margin-bottom:25px;">Auction Details:</h5>
+                  <table class="table" style="width:100%">
+                    <!--
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Value</th>
+                        <th scope="col">Unit</th>
+                      </tr>
+                    </thead>
+                    -->
+                    <tbody>
+                      <tr>
+                        <th scope="row">Starting price:</th>
+                        <td class="price-start" align="right"></td>
+                        <td>Ether</td>
+                      </tr>
+                      <tr style="color:#8a2be2;">
+                        <th scope="row">Current price:</th>
+                        <td class="price-current" align="right"></td>
+                        <td>Ether</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Ending price:</th>
+                        <td class="price-end" align="right"></td>
+                        <td>Ether</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Duration:</th>
+                        <td class="duration" align="right"></td>
+                        <td>Minutes</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-md-6">
+              <canvas id="chart" width="400" height="400"></canvas>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-3">
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <button id="buyButton" class="btn btn-success">Buy</button>
+              <button class="btn btn-success disabled" style="display:none;">Auction has ended</button>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+            </div>
+          </div>
+        </div>
+      <!--
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+      -->
+      </div>
+    </div>
+
+  </div>
+</div>

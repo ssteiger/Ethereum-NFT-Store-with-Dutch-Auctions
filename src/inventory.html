@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Buy your favorite number</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom-styles.css" rel="stylesheet">
+    <link href="css/overlay-no-web3.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/assets/bootstrap.min.js"></script>
+    <script src="js/assets/web3.min.js"></script>
+    <script src="js/assets/truffle-contract.js"></script>
+    <script src="js/assets/fitty.min.js"></script>
+
+    <script src="js/init-web3.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/navbar-header.js"></script>
+    <script src="js/inventory.js"></script>
+    <script src="js/create-auction-modal.js"></script>
+
+    <script>
+    $(function(){
+      // load navbar and modal
+      $("#inventory > .navbar").load("navbar-header.html");
+      $("#includedContent > .content-auction-template").load("auction-template.html");
+      $("#includedContent > .content-modal").load("create-auction-modal.html");
+      // initialize smart contracts
+      App.initContracts();
+    });
+    </script>
+  </head>
+
+  <body>
+    <div id="inventory">
+      <nav class="navbar navbar-default">
+      </nav>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8 col-sm-push-2">
+            <h1 class="text-center">Your Numbers</h1>
+            <hr/>
+            <br/>
+          </div>
+        </div>
+
+        <div id="accNumberRow" class="row">
+          <!-- numbers load here -->
+        </div>
+
+        <!--
+        <div class="row">
+          <div class="col-xs-12 col-sm-8 col-sm-push-2">
+            <h1 class="text-center">Your Auctions</h1>
+            <hr/>
+          </div>
+        </div>
+        <div class="row">
+          <div id="accRunningAuctions" class="col-xs-12 col-sm-6">
+            <h3 class="text-center">Running Auctions</h3>
+            <br>
+          </div>
+          <div id="accFinishedAuctions" class="col-xs-12 col-sm-6">
+            <h3 class="text-center">Finished Auctions</h3>
+            <br>
+          </div>
+        </div>
+      </div>
+      -->
+
+      <div id="accNumberTemplate" style="display:none;">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="panel panel-default panel-number">
+            <div class="panel-body">
+              <div>
+                <div class="number"></div>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-default init-sell"
+                        type="button" data-toggle="modal"
+                        data-target="#createAuctionModal">
+                        Sell
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="includedContent">
+        <div class="content-auction-template"></div>
+        <div class="content-modal"></div>
+      </div>
+
+    </div>
+  </body>
+</html>

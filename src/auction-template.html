@@ -1,0 +1,36 @@
+<div id="auctionTemplate" style="display:none;">
+  <div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="panel panel-default panel-number">
+      <div class="panel-body">
+        <div>
+          <div class="number"></div>
+        </div>
+        <table style="width:100%">
+          <tr>
+            <th>Starting price:</th>
+            <td class="price-start" align="right"></td>
+            <td class="unit" align="left">Ether</td>
+          </tr>
+          <tr>
+            <th>Ending price:</th>
+            <td class="price-end" align="right"></td>
+            <td class="unit" align="left">Ether</td>
+          </tr>
+          <tr>
+            <th>Duration:</th>
+            <td class="duration" align="right"></td>
+            <td class="unit" align="left">Min</td>
+          </tr>
+        </table>
+        <div class="text-center" style="margin-top:25px;">
+          <button class="btn btn-sm btn-default view-auction"
+                  type="button" 
+                  data-toggle="modal"
+                  data-target="#viewAuctionModal">
+            View details
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

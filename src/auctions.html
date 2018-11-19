@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Buy your favorite number</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom-styles.css" rel="stylesheet">
+    <link href="css/overlay-no-web3.css" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/assets/bootstrap.min.js"></script>
+    <script src="js/assets/web3.min.js"></script>
+    <script src="js/assets/truffle-contract.js"></script>
+    <script src="js/assets/fitty.min.js"></script>
+    <script src="js/assets/Chart.min.js"></script>
+    <script src="js/assets/chartjs-plugin-annotation.min.js"></script>
+
+    <script src="js/init-web3.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/navbar-header.js"></script>
+    <script src="js/auctions.js"></script>
+    <script src="js/view-auction-modal.js"></script>
+
+    <script>
+    $(function(){
+      // load navbar and modal
+      $("#auctions > .navbar").load("navbar-header.html");
+      $("#includedContent > .content-auction-template").load("auction-template.html");
+      $("#includedContent > .content-modal").load("view-auction-modal.html");
+      // initialize smart contracts
+      App.initContracts();
+    });
+    </script>
+  </head>
+
+  <body>
+    <div id="auctions">
+      <nav class="navbar navbar-default">
+      </nav>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8 col-sm-push-2">
+            <h1 class="text-center">Current Auctions</h1>
+            <hr/>
+            <br/>
+          </div>
+        </div>
+
+        <div id="auctionsRow" class="row">
+          <!-- auctions load here -->
+        </div>
+      </div>
+
+      <div id="includedContent">
+        <div class="content-auction-template"></div>
+        <div class="content-modal"></div>
+      </div>
+
+    </div>
+  </body>
+</html>

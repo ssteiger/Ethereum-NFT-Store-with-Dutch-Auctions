@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Buy your favorite number</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom-styles.css" rel="stylesheet">
+    <link href="css/overlay-no-web3.css" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/assets/bootstrap.min.js"></script>
+    <script src="js/assets/web3.min.js"></script>
+    <script src="js/assets/truffle-contract.js"></script>
+    <script src="js/assets/fitty.min.js"></script>
+
+    <script src="js/init-web3.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/navbar-header.js"></script>
+
+    <script>
+    $(function(){
+      // load navbar and modal
+      $("#app > .navbar").load("navbar-header.html");
+      // initialize smart contracts
+      App.initContracts();
+    });
+    </script>
+  </head>
+
+  <body>
+    <div id="app">
+      <nav class="navbar navbar-default">
+      </nav>
+
+      <div id="app" class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1 class="text-center">Buy (mint) your favorite number</h1>
+            <hr/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-3">
+          </div>
+          <div id="searchContainer" class="col-sm-12 col-md-6 text-center">
+            <form id="search" class="form-inline">
+              <div class="input-group">
+                <div class="input-group-addon">From</div>
+                <input type="number" class="form-control" id="from" placeholder="0" value="0">
+              </div>
+              <div class="input-group">
+                <div class="input-group-addon">To</div>
+                <input type="number" class="form-control" id="to" placeholder="100" value="100">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <small class="form-text text-muted">
+              Enter the range of numbers to display<br>
+            </small>
+            <small id="errorMessage" class="form-text text-muted text-info" style="width:100%;display:none">
+              Error
+            </small>
+          </div>
+          <div class="col-sm-12 col-md-3">
+          </div>
+        </div>
+
+        <div id="numberRow" class="row">
+          <!-- numbers load here -->
+        </div>
+      </div>
+
+      <div id="numberTemplate" style="display:none;">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="panel panel-default panel-number">
+            <div class="panel-body">
+              <div>
+                <div class="number">x</div>
+              </div>
+              <!--
+              <span class="info-available" style="display:none;">Number is available</span>
+              -->
+              <div class="text-center">
+                <button class="btn btn-default btn-avail" type="button">Check availability</button>
+                <button class="btn btn-success btn-mint" type="button" style="display:none;">Mint this number</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

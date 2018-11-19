@@ -1,0 +1,62 @@
+<div id="createAuctionModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-sm">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title text-center">Sell Number</h4>
+      </div>
+      <div class="modal-body">
+        <div class="number-template">
+          <div class="panel panel-default panel-number">
+            <div class="panel-body">
+              <div>
+                <div class="number"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form>
+          <div class="form-group">
+            <label for="startingPrice">Starting price</label>
+            <input type="number" class="form-control" id="startingPrice" placeholder="Starting price in Ether" value="2">
+            <small class="price-help" class="form-text text-muted">in Ether</small><br>
+          </div>
+          <div class="form-group">
+            <label for="endingPrice">Ending price</label>
+            <input type="number" class="form-control" id="endingPrice" placeholder="Ending price in Ether" value="1">
+            <small class="price-help" class="form-text text-muted">in Ether</small><br>
+          </div>
+          <div class="form-group">
+            <label for="duration">Duration of auction</label>
+            <input type="number" class="form-control" id="duration" placeholder="Duration of auction" value="42">
+            <small class="price-help" class="form-text text-muted">in Hours</small>
+          </div>
+
+          <div id="progress">
+            <hr>
+            <h5>Steps:</h5>
+            <ol>
+              <li>
+                Allow transfer of NFT
+                <span class="step-completed"> (completed)</span>
+              </li>
+              <li>
+                Start auction
+                <span class="step-completed"> (completed)</span>
+              </li>
+            </ol>
+          </div>
+
+          <button id="submitAuction" class="btn btn-success" style="width:100%">Allow transfer of NFT</button>
+        </form>
+      </div>
+      <!--
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+      -->
+    </div>
+
+  </div>
+</div>

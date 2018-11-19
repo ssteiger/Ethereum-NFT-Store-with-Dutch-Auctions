@@ -1,0 +1,54 @@
+form#search {
+  margin-top:5px;
+}
+
+.number {
+  min-height:100px;
+}
+
+.panel-body {
+  text-align:center;
+}
+
+#searchContainer {
+  padding:15px;
+}
+
+@media screen and (max-width:768px) {
+  #searchContainer .input-group {
+    margin-bottom:10px;
+  }
+  #searchContainer button {
+    width:100%;
+  }
+}
+
+#auctionsRow .unit {
+  padding-left:3px;
+}
+
+#accRunningAuctions {
+  border-right:1px solid #eee;
+}
+
+#progress {
+  margin-top:20px;
+}
+
+#progress ol {
+  padding-left:20px;
+  color:#cccccc;
+}
+
+#progress .step-completed {
+  color:#5cb85c;
+}
+
+#progress span.step-completed {
+  display:none;
+}
+
+#viewAuctionModal .btn-success {
+  width:100%;
+  margin-top:20px;
+}
