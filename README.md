@@ -5,7 +5,7 @@
 # install dependencies
 $ npm install
 
-# deploy contracts
+# deploy contracts (be sure to change the 'from' account in 'truffle.js')
 $ truffle migrate --reset --network ganache
 
 # start app
