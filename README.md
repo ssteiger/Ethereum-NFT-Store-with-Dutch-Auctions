@@ -55,7 +55,6 @@ $ npm run dev
 
 ## TODO's
 * [ ] add discoverability for auctions to NFTDutchAuction.sol (see: NFTokenEnumerable.sol `function tokenOfOwnerByIndex(address _owner, uint256 _index)`)
-* [ ] https://ethereum.stackexchange.com/questions/18479/filtering-events-by-contract-address-and-sender-address?rq=1
 * [ ] add possibility to cancel auction
 * [ ] reduce gas cost of NFTDutchAuction.sol functions
 * [ ] rework search for numbers: add steps, show min and max, etc.
