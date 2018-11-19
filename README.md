@@ -14,11 +14,11 @@ $ npm run dev
 (The app is configured to check for a private [Ganache](https://truffleframework.com/ganache) network)
 
 ## Used packages
-* [Truffle](https://truffleframework.com/truffle)
-* [web3.js](https://github.com/ethereum/web3.js/)
-* [Chart.js](https://github.com/chartjs/Chart.js)
-* [Annotation plugin for Chart.js](https://github.com/chartjs/chartjs-plugin-annotation)
-* [Fitty, Snugly text resizing](https://github.com/rikschennink/fitty)
+- [Truffle](https://truffleframework.com/truffle)
+- [web3.js](https://github.com/ethereum/web3.js/)
+- [Chart.js](https://github.com/chartjs/Chart.js)
+- [Annotation plugin for Chart.js](https://github.com/chartjs/chartjs-plugin-annotation)
+- [Fitty, Snugly text resizing](https://github.com/rikschennink/fitty)
 
 ## Used contracts
 - [0xcert/ethereum-utils](https://github.com/0xcert/ethereum-utils)
