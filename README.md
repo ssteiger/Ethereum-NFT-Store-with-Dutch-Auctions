@@ -64,8 +64,6 @@ $ npm run dev
 * [x] update to new MetaMask injection format
 * [ ] on page inventory: when calling getOwnedNFT() do not loop over 0 -> display message "currently no NFT's owned"
 * [ ] unify used time units (currently hours and minutes)
-* [ ] add screenshots
-* [ ] add license (MIT) (https://choosealicense.com/licenses/)
 
 ## Screenshots
 ![](https://imgur.com/DRchlDI.png)
