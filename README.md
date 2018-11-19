@@ -11,7 +11,7 @@ $ truffle migrate --reset --network ganache
 # start app
 $ npm run dev
 ```
-(The App is configured to check for a private [Ganache](https://truffleframework.com/ganache) network)
+(The app is configured to check for a private [Ganache](https://truffleframework.com/ganache) network)
 
 ## Used packages
 * [Truffle](https://truffleframework.com/truffle)
@@ -55,13 +55,13 @@ $ npm run dev
 
 ## TODO's
 * [ ] add discoverability for auctions to NFTDutchAuction.sol (see: NFTokenEnumerable.sol `function tokenOfOwnerByIndex(address _owner, uint256 _index)`)
-* [ ] add possibility to cancel auction
+* [ ] add possibility to cancel auctions
 * [ ] reduce gas cost of NFTDutchAuction.sol functions
 * [ ] rework search for numbers: add steps, show min and max, etc.
 * [ ] add notifications
 * [x] handle non web3 compatible browsers
 * [x] update to new MetaMask injection format
-* [ ] on page inventory: when calling getOwnedNFT() do not loop over 0 -> display message "currently no NFT's owned"
+* [ ] inventory: when calling getOwnedNFT() do not loop over 0 -> display message "currently no NFT's owned"
 * [ ] unify used time units (currently hours and minutes)
 
 ## Screenshots
