@@ -3,7 +3,7 @@
 A POC of a NFT Store where one can mint NFT's and then sell them by creating dutch auctions.
 The app consists of three pages:
 1. A main page where one can search for NFT's and mint them
-2. An auction page where all currently running auctions are listed
+2. An auctions page where all currently running auctions are listed
 3. An inventory page where all numbers owned by the current user are listed
 ## Getting up and running
 ```bash
