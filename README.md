@@ -1,5 +1,7 @@
 # Ethereum NFT-Store with Dutch Auctions [POC]
 
+![](https://imgur.com/kMFTLUF.png)
+
 A POC of a NFT Store where one can mint NFT's and then sell them by creating dutch auctions.
 The app consists of three pages:
 1. A main page where one can search for NFT's and mint them
@@ -70,7 +72,6 @@ $ npm run dev
 * [ ] unify used time units (currently hours and minutes)
 
 ## Screenshots
-![](https://imgur.com/kMFTLUF.png)
 ![](https://imgur.com/sy5UYs3.png)
 ![](https://imgur.com/yEJYx63.png)
 ![](https://imgur.com/8biOm3H.png)
