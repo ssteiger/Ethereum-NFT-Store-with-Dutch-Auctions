@@ -1,3 +1,10 @@
+body {
+  min-height:100vh;
+  background-image:-webkit-linear-gradient(bottom left, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  background-image:-o-linear-gradient(bottom left, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  background-image:linear-gradient(to top right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
 form#search {
   margin-top:5px;
 }
@@ -28,7 +35,7 @@ form#search {
 }
 
 #accRunningAuctions {
-  border-right:1px solid #eee;
+  border-right:1px solid #eeeeee;
 }
 
 #progress {
@@ -51,4 +58,14 @@ form#search {
 #viewAuctionModal .btn-success {
   width:100%;
   margin-top:20px;
+}
+
+#viewAuctionModal .modal-content {
+  background-image:-webkit-linear-gradient(bottom left, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  background-image:-o-linear-gradient(bottom left, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  background-image:linear-gradient(to top right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+#viewAuctionModal .modal-body {
+  background-color:#ffffff;
 }

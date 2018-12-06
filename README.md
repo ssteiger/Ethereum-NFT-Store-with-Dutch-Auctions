@@ -70,8 +70,8 @@ $ npm run dev
 * [ ] unify used time units (currently hours and minutes)
 
 ## Screenshots
-![](https://imgur.com/DRchlDI.png)
-![](https://imgur.com/x2wPZEX.png)
-![](https://imgur.com/mLVXLO1.png)
-![](https://imgur.com/GxSXwMd.png)
-![](https://imgur.com/EdxWA3w.png)
+![](https://imgur.com/kMFTLUF.png)
+![](https://imgur.com/sy5UYs3.png)
+![](https://imgur.com/yEJYx63.png)
+![](https://imgur.com/8biOm3H.png)
+![](https://imgur.com/Fn4ftym.png)
