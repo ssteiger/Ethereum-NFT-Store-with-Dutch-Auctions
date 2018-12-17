@@ -2,7 +2,7 @@
 
 ![](https://imgur.com/kMFTLUF.png)
 
-A POC of a NFT Store where one can mint NFT's and then sell them by creating dutch auctions.
+A POC of a NFT-Store where one can mint NFT's and then sell them by creating dutch auctions.
 The app consists of three pages:
 1. A main page where one can search for NFT's and mint them
 2. An auctions page where all currently running auctions are listed
