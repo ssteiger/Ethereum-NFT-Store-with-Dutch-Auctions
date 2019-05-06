@@ -69,7 +69,7 @@ Auctions = {
 
   bindEvents: () => {
     // add 'number to sell' to modal
-    $(document).on('click', '#auctionsRow .view-auction', (event) => {
+    $(document).on('click', '#auctionsRow .view-auction', function(event) {
       const parent = $(this).parent().parent().parent(); // TODO: ugh
       const formattedNumber = parent.find('.number').text()
       const auctionId = parent.find('.panel-body').attr('data-auction-id')

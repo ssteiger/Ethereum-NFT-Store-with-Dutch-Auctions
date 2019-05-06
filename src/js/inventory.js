@@ -86,9 +86,10 @@ Inventory = {
 
   bindEvents: () => {
     // add number to sell to modal
-    $(document).on('click', '#accNumberRow .init-sell', (e) => {
+    $(document).on('click', '#accNumberRow .init-sell', function(e) {
       const formattedNumber = $(this).parent().parent().find('.number').text()
       const number = $(this).attr('data-token-id')
+      console.log(number)
       // add number to the modal
       $('#createAuctionModal .number').text(formattedNumber)
       $('#createAuctionModal .panel-body .number').attr('data-token-id', number)

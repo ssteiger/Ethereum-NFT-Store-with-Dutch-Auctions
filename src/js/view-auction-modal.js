@@ -25,7 +25,6 @@ ViewAuctionM = {
       */
 
       App.contracts.NFTDutchAuction.deployed().then((instance) => {
-        tokenToBuy = parseInt(tokenToBuy)
         return instance.getCurrentPriceByAuctionId(auctionId, {from: account})
       }).then((currentPrice) => {
         console.log(`current price: ${currentPrice}`)
@@ -49,7 +48,6 @@ ViewAuctionM = {
       const account = accounts[0]
 
       App.contracts.NFTDutchAuction.deployed().then((instance) => {
-        tokenToBuy = parseInt(tokenToBuy)
         console.log(`calling instance.bid() with price: ${price}`)
         // TODO: calculate fixed gas amount
         return instance.bid(tokenToBuy, {value: price, from: account, gas: 250000})
