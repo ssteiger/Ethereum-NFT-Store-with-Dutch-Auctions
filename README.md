@@ -65,9 +65,8 @@ $ npm run dev
 * [ ] add possibility to cancel auctions
 * [ ] reduce gas cost of NFTDutchAuction.sol functions
 * [ ] rework search for numbers: add steps, show min and max, etc.
+* [ ] add tests
 * [ ] add notifications
-* [x] handle non web3 compatible browsers
-* [x] update to new MetaMask injection format
 * [ ] inventory: when calling getOwnedNFT() do not loop over 0 -> display message "currently no NFT's owned"
 * [ ] unify used time units (currently hours and minutes)
 

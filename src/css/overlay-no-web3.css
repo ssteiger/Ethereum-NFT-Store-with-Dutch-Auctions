@@ -8,7 +8,7 @@
   background-color:rgba(232, 236, 238, 0.95);
   overflow-x:hidden;
   z-index:100;
- }
+}
 
 #overlay .content {
   position:relative;
