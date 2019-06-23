@@ -1,19 +1,24 @@
 {
   "name": "ethereum-buy-your-favorite-number",
   "version": "1.0.0",
-  "description": "",
-  "main": "truffle-config.js",
-  "directories": {
-    "test": "test"
-  },
+  "description": "A NFT-Store with Dutch Auctions running on Ethereum",
+  "main": "truffle.js",
   "scripts": {
-    "dev": "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "lite-server"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Sören Steiger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ssteiger/Ethereum-NFT-Store-with-Dutch-Auctions/issues"
+  },
+  "keywords": [
+    "ethereum",
+    "nft",
+    "truffle"
+  ],
+  "homepage": "https://github.com/ssteiger/Ethereum-NFT-Store-with-Dutch-Auctions",
   "devDependencies": {
-    "lite-server": "^2.3.0"
+    "lite-server": "^2.5.3"
   },
   "dependencies": {}
 }
