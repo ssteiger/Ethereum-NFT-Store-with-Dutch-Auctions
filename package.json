@@ -20,5 +20,7 @@
   "devDependencies": {
     "lite-server": "^2.5.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@0xcert/ethereum-utils": "^1.7.4"
+  }
 }
