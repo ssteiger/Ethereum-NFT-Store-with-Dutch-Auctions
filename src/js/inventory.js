@@ -1,15 +1,9 @@
 Inventory = {
-  init: () => {
+  init: async () => {
     console.log('Inventory init')
-    web3.eth.getAccounts((error, accounts) => {
-      if (error) {
-        throw error
-      }
-
-      const account = accounts[0]
-
-      Inventory.appendTokens(account)
-    })
+    const accounts = await ethereum.request({ method: 'eth_accounts' });
+    console.log(accounts);
+    Inventory.appendTokens(accounts[0])
   },
 
   appendTokens: (account) => {

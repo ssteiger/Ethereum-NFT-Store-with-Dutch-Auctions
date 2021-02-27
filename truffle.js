@@ -5,9 +5,9 @@ module.exports = {
     ganache: {
       host: "127.0.0.1",
       port: 7545,
-      network_id: "*", // match any network id
-      from: "0x954e72fdc51Cf919203067406fB337Ed4bDC8CdA", // account address from which to deploy
-      gas: 4000000,
+      network_id: "5777", // match any network id
+      from: "0xED36deb2ffeb19c415221fA1dbB4108C0dd962e4", // account address from which to deploy
+      gas: 6721975,
     }
   },
   compilers: {
