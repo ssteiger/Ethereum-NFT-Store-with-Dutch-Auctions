@@ -1,16 +1,8 @@
 Auctions = {
-  init: () => {
+  init: async () => {
     console.log('Auctions init')
-
-    web3.eth.getAccounts((error, accounts) => {
-      if (error) {
-        throw error
-      }
-
-      const account = accounts[0]
-
-      Auctions.appendAuctions(account)
-    })
+    const accounts = await ethereum.request({ method: 'eth_accounts' });
+    Auctions.appendAuctions(accounts[0])
   },
 
   appendAuctions: (account) => {

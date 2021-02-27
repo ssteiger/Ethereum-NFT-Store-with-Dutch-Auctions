@@ -21,6 +21,7 @@
     "lite-server": "^2.5.3"
   },
   "dependencies": {
-    "@0xcert/ethereum-utils": "^1.7.4"
+    "@0xcert/ethereum-utils": "github:0xcert/ethereum-utils",
+    "openzeppelin-solidity": "^3.4.0"
   }
 }
