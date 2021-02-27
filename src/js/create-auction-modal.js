@@ -22,7 +22,8 @@ CreateAuctionM = {
     duration = duration * 60 * 60
 
     if (startingPrice < endingPrice) {
-      throw 'error: starting price must be greater than ending price'
+      alert('Error: Starting price must be greater than ending price')
+      throw 'Error: Starting price must be greater than ending price'
     }
 
     web3.eth.getAccounts((error, accounts) => {
