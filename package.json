@@ -18,7 +18,7 @@
   ],
   "homepage": "https://github.com/ssteiger/Ethereum-NFT-Store-with-Dutch-Auctions",
   "devDependencies": {
-    "lite-server": "^2.5.3"
+    "lite-server": "^2.6.1"
   },
   "dependencies": {
     "@0xcert/ethereum-utils": "github:0xcert/ethereum-utils",
